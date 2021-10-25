@@ -1,5 +1,4 @@
 {% from '@SyliusAdmin/Macro/translationForm.html.twig' import translationFormWithSlug %}
-{{ dump(sylius.channel) }}
 <div class="ui active tab" data-tab="details">
     <h3 class="ui top attached header">{{ 'sylius.ui.details'|trans }}</h3>
 
@@ -17,7 +16,7 @@
                         {{ form_row(form.options) }}
                         {{ form_row(form.variantSelectionMethod) }}
                     {% endif %}
-                    {# Nothing to see here. #}
+                    {{ form_row(form.color) }}
                     <div class="ui hidden element">
                         {% if product.simple %}
                             {{ form_row(form.variant.translations) }}

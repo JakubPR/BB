@@ -1,0 +1,7 @@
+sylius:
+    ui:
+        color_none: "Not selected"
+        color_red: "Red"
+        color_green: "Green"
+        color_blue: "Blue"
+        color_selection: "Color selected"
