@@ -14,10 +14,10 @@ use Sylius\Component\Product\Model\ProductTranslationInterface;
  */
 class Product extends BaseProduct
 {
-    public const NO_COLOR       = 'sylius.ui.color_none';
-    public const COLOR_RED      = 'sylius.ui.color_red';
-    public const COLOR_GREEN    = 'sylius.ui.color_green';
-    public const COLOR_BLUE     = 'sylius.ui.color_blue';
+    private const NO_COLOR       = 'sylius.ui.color_none';
+    private const COLOR_RED      = 'sylius.ui.color_red';
+    private const COLOR_GREEN    = 'sylius.ui.color_green';
+    private const COLOR_BLUE     = 'sylius.ui.color_blue';
 
     static public array $colors = [
         self::NO_COLOR      => 0,
