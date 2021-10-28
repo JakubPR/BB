@@ -17,7 +17,7 @@ class ProductTypeExtension extends AbstractTypeExtension
     {
         $builder
             ->add('color', ChoiceType::class, [
-                'choices' => Product::$colors,
+                'choices' => Product::getColors(),
                 'label' => 'sylius.ui.color_selection',
             ]);
     }

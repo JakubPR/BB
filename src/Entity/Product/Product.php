@@ -19,7 +19,7 @@ class Product extends BaseProduct
     private const COLOR_GREEN    = 'sylius.ui.color_green';
     private const COLOR_BLUE     = 'sylius.ui.color_blue';
 
-    static public array $colors = [
+    private const colors = [
         self::NO_COLOR      => 0,
         self::COLOR_RED     => 1,
         self::COLOR_GREEN   => 2,
@@ -33,9 +33,6 @@ class Product extends BaseProduct
      */
     private $color;
 
-    /**
-     * @return int
-     */
     public function getColor(): int
     {
         return $this->color;
@@ -44,6 +41,11 @@ class Product extends BaseProduct
     public function setColor(int $color): void
     {
         $this->color = $color;
+    }
+
+    public static function getColors(): array
+    {
+        return self::colors;
     }
 
     protected function createTranslation(): ProductTranslationInterface
