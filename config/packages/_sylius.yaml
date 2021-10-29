@@ -124,42 +124,6 @@ sylius_payum:
             classes:
                 model: App\Entity\Payment\GatewayConfig
 
-sylius_product:
-    resources:
-        product:
-            classes:
-                model: App\Entity\Product\Product
-            translation:
-                classes:
-                    model: App\Entity\Product\ProductTranslation
-        product_variant:
-            classes:
-                model: App\Entity\Product\ProductVariant
-            translation:
-                classes:
-                    model: App\Entity\Product\ProductVariantTranslation
-        product_option:
-            classes:
-                model: App\Entity\Product\ProductOption
-            translation:
-                classes:
-                    model: App\Entity\Product\ProductOptionTranslation
-        product_option_value:
-            classes:
-                model: App\Entity\Product\ProductOptionValue
-            translation:
-                classes:
-                    model: App\Entity\Product\ProductOptionValueTranslation
-        product_association:
-            classes:
-                model: App\Entity\Product\ProductAssociation
-        product_association_type:
-            classes:
-                model: App\Entity\Product\ProductAssociationType
-            translation:
-                classes:
-                    model: App\Entity\Product\ProductAssociationTypeTranslation
-
 sylius_promotion:
     resources:
         promotion:
