@@ -26,11 +26,7 @@ class Product extends BaseProduct
         self::COLOR_BLUE    => 3,
     ];
 
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="color", type="integer", nullable=true)
-     */
+    /** @var int */
     private $color;
 
     public function getColor(): int
