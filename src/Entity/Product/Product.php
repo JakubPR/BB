@@ -38,7 +38,7 @@ class Product extends BaseProduct
         return $this->color;
     }
 
-    public function setColor(int $color): void
+    public function setColor(?int $color): void
     {
         $this->color = $color;
     }
@@ -46,10 +46,5 @@ class Product extends BaseProduct
     public static function getColors(): array
     {
         return self::colors;
-    }
-
-    protected function createTranslation(): ProductTranslationInterface
-    {
-        return new ProductTranslation();
     }
 }
