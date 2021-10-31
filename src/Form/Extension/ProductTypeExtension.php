@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Form\Extension;
 
-use App\Entity\Product\Product;
+use App\Entity\Product;
 use Sylius\Bundle\ProductBundle\Form\Type\ProductType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractTypeExtension;

@@ -25,5 +25,6 @@ sylius_product:
     resources:
         product:
             classes:
-                model: App\Entity\Product\Product
+                model: App\Entity\Product
+                interface: App\Entity\ProductInterface
            

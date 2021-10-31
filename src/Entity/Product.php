@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Entity\Product;
+namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Sylius\Component\Core\Model\Product as BaseProduct;
