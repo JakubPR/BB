@@ -4,14 +4,8 @@ declare(strict_types=1);
 
 namespace App\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
 use Sylius\Component\Core\Model\Product as BaseProduct;
-use Sylius\Component\Product\Model\ProductTranslationInterface;
 
-/**
- * @ORM\Entity
- * @ORM\Table(name="sylius_product")
- */
 class Product extends BaseProduct
 {
     private const NO_COLOR       = 'sylius.ui.color_none';
@@ -26,12 +20,8 @@ class Product extends BaseProduct
         self::COLOR_BLUE    => 3,
     ];
 
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="color", type="integer", nullable=true)
-     */
-    private $color;
+    /** @var int */
+    private int $color;
 
     public function getColor(): int
     {
