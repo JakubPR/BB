@@ -6,19 +6,9 @@ namespace App\Entity;
 
 use Sylius\Component\Core\Model\Product as BaseProduct;
 
-class Product extends BaseProduct
+class Product extends BaseProduct implements ProductInterface
 {
-    private const NO_COLOR       = 'sylius.ui.color_none';
-    private const COLOR_RED      = 'sylius.ui.color_red';
-    private const COLOR_GREEN    = 'sylius.ui.color_green';
-    private const COLOR_BLUE     = 'sylius.ui.color_blue';
-
-    private const colors = [
-        self::NO_COLOR      => 0,
-        self::COLOR_RED     => 1,
-        self::COLOR_GREEN   => 2,
-        self::COLOR_BLUE    => 3,
-    ];
+    protected const colorsTable = ProductInterface::colors;
 
     /** @var int */
     private int $color;
@@ -35,6 +25,6 @@ class Product extends BaseProduct
 
     public static function getColors(): array
     {
-        return self::colors;
+        return self::colorsTable;
     }
 }

@@ -10,5 +10,3 @@
         <field name="color" column="color" type="integer" nullable="true"/>
     </mapped-superclass>
 </doctrine-mapping>
-
-
